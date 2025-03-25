@@ -19,7 +19,8 @@ jobs:
         run: docker build -t charuvatsala/react-app .
       - name: Publish image to Docker hub
         run: docker push charuvatsala/react-app:latest
-  
+
+        
   deploy:
     needs: build
     runs-on: ip-172-31-95-9
